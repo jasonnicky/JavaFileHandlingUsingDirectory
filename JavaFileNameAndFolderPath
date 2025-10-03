@@ -1,0 +1,21 @@
+package javafilehandling;
+import java.io.*;
+
+public class JavaFileHandling 
+{
+    public static void main(String[] args) throws Exception
+    {
+        // TODO code application logic here
+        File f = new File("C:/Users/jason/MyJava2025");
+        
+        System.out.println(f.isDirectory());
+        File list[] = f.listFiles();
+        
+        for(File x:list)
+        {
+            System.out.println("File Name "+x.getName()+" ");
+            //System.out.println("File Path "+x.getPath());
+            System.out.println("Folder Name "+x.getParent());
+        }
+    }
+}
